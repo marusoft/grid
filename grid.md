@@ -1,6 +1,6 @@
 ## CSS Grid
 ------------
-The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+CSS Grid Layout provides a two dimensional layout system,, with rows and columns, making it easier to design responsive web applications or pages.
 
 Grid is a layout method designed for two-dimensional content. That is, laying things out in rows and columns at the same time.
 
