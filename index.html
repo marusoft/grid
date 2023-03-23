@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS GRID LAYOUT</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>GRID CONTAINER</h1>
+      <h3>
+        An HTML element becomes a grid container when its display property is
+        set to `grid` or `inline-grid`.
+      </h3>
+      <div class="grid-wrapper">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+      </div>
+
+      <!-- grid template property -->
+      <h3>
+        grid-template-columns specifies the size of the columns, and how many
+        columns in a grid layout.
+      </h3>
+      <h3>
+        grid-template-rows specifies the size of the rows, and how many rows in
+        a grid layout. Each value defines the height of the respective row
+      </h3>
+      <h3>
+        The eaxmple below shows a grid container that contains four columns and
+        three rows
+      </h3>
+      <div class="template-container">
+        <div class="grid-template-item">A</div>
+        <div class="grid-template-item">B</div>
+        <div class="grid-template-item">C</div>
+        <div class="grid-template-item">D</div>
+        <div class="grid-template-item">E</div>
+        <div class="grid-template-item">F</div>
+        <div class="grid-template-item">G</div>
+        <div class="grid-template-item">H</div>
+        <div class="grid-template-item">I</div>
+      </div>
+      <!-- grid template property -->
+
+      <!-- justify-content property -->
+      <h3>
+        The justify-content property is used to align the whole grid inside the
+        container.
+      </h3>
+      <h3 style="font-size: 1.5rem">justify-content:</h3>
+      | start | end | space-evenly | space-around | space-between | center |
+      <h3>start</h3>
+      <div class="start-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <h3>end</h3>
+      <div class="end-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <h3>space-evenly</h3>
+      <div class="space-evenly-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <h3>space-around</h3>
+      <div class="space-around-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <h3>space-between</h3>
+      <div class="space-between-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <h3>center</h3>
+      <div class="center-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <!-- justify-content property -->
+
+      <!-- align-content -->
+      <h3>
+        The align-content property is used to vertically align the whole grid
+        inside the container.
+      </h3>
+      <h3 style="font-size: 1.5rem">The align-content values are:</h3>
+      | center | space-evenly | space-around | space-between | start | end |
+      <h3>center</h3>
+      <div class="center-align-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <h3>space-evenly</h3>
+      <div class="space-evenly-align-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <h3>space-around</h3>
+      <div class="space-around-align-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <h3>space-between</h3>
+      <div class="space-between-align-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <h3>start</h3>
+      <div class="start-align-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <h3>end</h3>
+      <div class="end-align-container">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+      </div>
+      <!-- align-content -->
+
+      <h1 style="margin-bottom: 10px; color: rgb(58, 42, 7)">CSS Grid Item(Child Elements)</h1>
+      <h3>
+        <span style="color: blue">grid-column</span>: The
+        <em>grid-column</em> property defines on which column(s) to place an
+        item. You can define where the item will start, and where the item will
+        end. The <em>grid-column</em> property is a shorthand property for the
+        grid-column-start and the grid-column-end properties.
+      </h3>
+      <h3>
+        For example: To place a <em>grid-column-item-1</em> at column line 1,
+        and let it end on column line 3:
+      </h3>
+      <h3>
+        And also To place a <em>grid-column-item-9</em> at column line 1, and
+        let it end on column line 4:
+      </h3>
+      <div class="grid-column-container">
+        <div class="grid-column-item-1">A</div>
+        <div class="grid-column-item-2">B</div>
+        <div class="grid-column-item-3">C</div>
+        <div class="grid-column-item-4">D</div>
+        <div class="grid-column-item-5">E</div>
+        <div class="grid-column-item-6">F</div>
+        <div class="grid-column-item-7">G</div>
+        <div class="grid-column-item-8">H</div>
+        <div class="grid-column-item-9">I</div>
+      </div>
+      <h3 style="margin-bottom: 10px; margin-top: 10px;">
+        <span style="color: blue">grid-row</span>: The
+        <em>grid-row</em> property defines on which row(s) to place an item. You
+        can define where the item will start, and where the item will end. The
+        <em>grid-row</em> property is a shorthand property for the
+        grid-row-start and the grid-row-end properties.
+      </h3>
+      <h3>
+        For example: To place a <em>grid-row-item-1</em> at row line 1, and let
+        it end on row line 6. Also, to place a <em>grid-row-item-2</em> at row
+        line 1, and let it end on row line 4.
+      </h3>
+      <h3 style="margin-bottom: 10px; margin-top: 10px;">
+        grid-area either specifies a name for the grid item, It is also a
+        shorthand property for the <em>grid-row-start</em>,
+        <em>grid-column-start</em>, <em>grid-row-end</em>, and
+        <em>grid-column-end</em>em> properties.
+      </h3>
+      <div class="grid-row-container">
+        <div class="grid-row-item-1">A</div>
+        <div class="grid-row-item-2">B</div>
+        <div class="grid-row-item-3">C</div>
+        <div class="grid-row-item-4">D</div>
+        <div class="grid-row-item-5">E</div>
+        <div class="grid-row-item-6">F</div>
+        <div class="grid-row-item-7">G</div>
+        <div class="grid-row-item-8">H</div>
+        <div class="grid-row-item-9">I</div>
+      </div>
+      <h3 style="margin-bottom: 10px; margin-top: 10px;">Another Example</h3>
+      <section class="grid">
+        <h1 style="margin-bottom: 10px;">GRID ROW</h1>
+        <div class="grid-container">
+          <div class="grid-item" id="item-1">1</div>
+          <div class="grid-item" id="item-2">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+          <div class="grid-item">7</div>
+          <div class="grid-item">8</div>
+          <div class="grid-item" id="item-9">9</div>
+        </div>
+      </section>
+
+      <h2 style="margin-bottom: 10px; margin-top: 10px;">grid-template-areas</h2>
+      <h3>
+        <em>grid-template-areas</em> specifies how to display
+        <em>columns</em> and <em>rows</em>, using named grid items.
+      </h3>
+      <h2 style="margin-bottom: 10px; margin-top: 10px;">
+        The grid-area property can also be used to assign names to grid items.
+      </h2>
+
+      <div class="template-areas-container">
+        <div class="area-item-1">Navbar</div>
+        <div class="area-item-2">Sidebar</div>
+        <div class="area-item-3">Main Content</div>
+        <div class="area-item-4">Footer</div>
+      </div>
+
+      <h1>Two Column Container</h1>
+      <section class="grid-parent">
+        <div class="left-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quisquam eaque sunt modi tempore sequi! Similique quas provident, optio quod incidunt quidem cupiditate mollitia eius commodi soluta nesciunt, doloremque rem laborum, hic quae. Porro provident quis odio illum, excepturi aliquam deleniti obcaecati impedit autem, animi quaerat possimus, sapiente fuga est?</div>
+        <div class="right-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum sunt fugit consequuntur sint saepe pariatur tenetur ab dolor dolorem id minima perspiciatis ratione quos magnam cumque nisi quae vitae aut provident fugiat odit, excepturi quia! Ducimus illo voluptates asperiores accusamus provident, obcaecati magni, consequuntur quae consequatur ipsum dolores excepturi?</div>
+      </section>
+
+    </div>
+  </body>
+</html>

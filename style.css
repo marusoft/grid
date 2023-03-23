@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  padding: 1rem;
+}
+/* grid container */
+.grid-wrapper {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  margin-top: 1rem;
+}
+.grid-wrapper > div {
+  background-color: #0bb3e6;
+  padding: 25px;
+  font-size: 1.5rem;
+}
+/* grid container */
+
+/* grid template */
+.template-container {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 150px 250px 350px;
+}
+.grid-template-item {
+  background-color: #0bb3e6;
+  padding: 25px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* grid template */
+
+/* justify-content property */
+.start-container {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: start;
+}
+.end-container {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: end;
+}
+.space-evenly-container {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: space-evenly;
+}
+.space-around-container {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: space-around;
+}
+.space-between-container {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: space-between;
+}
+.center-container {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: center;
+}
+.list-item {
+  background-color: #0bb3e6;
+  padding: 25px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* justify-content property */
+
+/* align-content */
+.center-align-container {
+  display: grid;
+  padding: 1rem;
+  height: 400px;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+}
+.space-evenly-align-container {
+  display: grid;
+  padding: 1rem;
+  height: 400px;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: auto auto auto;
+  align-content: space-evenly;
+}
+.space-around-align-container {
+  display: grid;
+  padding: 1rem;
+  height: 400px;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: auto auto auto;
+  align-content: space-around;
+}
+.space-between-align-container {
+  display: grid;
+  padding: 1rem;
+  height: 400px;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: auto auto auto;
+  align-content: space-between;
+}
+.start-align-container {
+  display: grid;
+  padding: 1rem;
+  height: 400px;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: auto auto auto;
+  align-content: start;
+}
+.end-align-container {
+  display: grid;
+  padding: 1rem;
+  height: 400px;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: auto auto auto;
+  align-content: end;
+}
+/* align-content */
+
+/* CSS Grid Item(Child Elements) */
+/* grid column */
+.grid-column-container {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: auto auto auto;
+}
+.grid-column-container > div {
+  background-color: #0bb3e6;
+  padding: 25px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.grid-column-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-column: 1 / 3;
+}
+.grid-column-item-9 {
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  grid-column: 1 / 4;
+}
+/* grid column */
+
+/* grid row */
+.grid-row-container {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-columns: auto auto auto;
+}
+.grid-row-container > div {
+  background-color: #0bb3e6;
+  padding: 25px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.grid-row-item-1 {
+  /* grid-row-start: 1;
+  grid-row-end: 6; */
+  /* shorthand */
+  grid-row: 1 / 6;
+  /* grid-row: 1 / span 5; */
+}
+.grid-row-item-2 {
+  /* grid-row-start: 1;
+  grid-row-end: 4; */
+  /* shorthand */
+  grid-row: 1 / 4;
+  /* grid-row: 1 span 5 ; */
+}
+/* grid row */
+
+/* Another example */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: rebeccapurple; */
+  /* padding: 1rem; */
+  /* column-gap: 2rem; */
+  /* row-gap: 2rem; */
+  gap: 1rem;
+}
+.grid-item {
+  background-color: #efefef;
+  border: 1px solid #000000;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#item-1 {
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+#item-2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#item-9 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+/* grid-template-areas */
+
+.template-areas-container {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
+  grid-template-areas: 
+  "SIDEBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR"
+  "SIDEBAR MAIN MAIN MAIN MAIN MAIN"
+  "SIDEBAR FOOTER FOOTER FOOTER FOOTER FOOTER"
+  ;
+}
+.template-areas-container > div {
+  background-color: #0bb3e6;
+  padding: 25px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.area-item-1 {
+  grid-area: NAVBAR;
+
+}
+.area-item-2 {
+  grid-area: SIDEBAR;
+}
+.area-item-3 {
+  grid-area: MAIN;
+}
+.area-item-4 {
+  grid-area: FOOTER;
+  /* grid-column: 1 / 8; */
+}
+/* grid-template-areas */
+
+/* CSS Grid Item(Child Elements) */
+
+/* two column */
+.grid-parent{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+  gap: 1rem;
+}
+.left-container{
+  background-color: dodgerblue;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+.right-container{
+  background-color: darkgoldenrod;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+/* two column */
